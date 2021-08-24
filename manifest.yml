@@ -1,0 +1,17 @@
+modules:
+  jira:issuePanel:
+    - key: prolistteam-hello-world-panel
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: prolistteam
+      icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/992dbe36-1416-4f5a-a04d-465f94b47d14
